@@ -16,7 +16,6 @@ a:hover {
 
 a img {
     border: 0;
-	padding: 2px;
 }
 p {
     margin: 0 0 16px;
@@ -76,9 +75,9 @@ h3 {
 
 #menu {
     margin: 0 auto;
-    width: 450px;
+    width: 750px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #menu li {
@@ -94,7 +93,7 @@ h3 {
     color: #2277BB;
     display: block;
     font-family: myriad-pro-condensed-1, myriad-pro-condensed-2, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     margin-left: 15px;
     padding: 5px 10px;
     text-decoration: none;
@@ -231,4 +230,10 @@ h3 {
 
 .m {
     display: none;
+}
+
+.menu_icon {
+    vertical-align:top
+    height: 21px;
+    width: 21px;
 }
