@@ -1,0 +1,3 @@
+[submodule "projects/youtubeinstant"]
+	path = projects/youtubeinstant
+	url = git://github.com/jclg/youtubeinstant.git
