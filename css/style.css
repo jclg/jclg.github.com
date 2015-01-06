@@ -1033,10 +1033,7 @@ p {
     margin: 0 0 16px;
 }
 
-ul {
-    margin: 0 0 22px 13px;
-    list-style: none outside none
-}
+
 
 body {
     background-image: url("../img/bg.jpg");
@@ -1070,37 +1067,37 @@ h3 {
     font-weight:normal;
 }
 
-#header {
-    background-color: #0F0F0F;
-    border-bottom: 3px solid #8B4513;
-    color: #555555;
-    padding: 15px;
-    padding-left: 10px;
-    position: relative;
-    left: 0;
-    top: 0;
-    height: 25px;
-}
 
-#menu {
+.menu {
     margin: 0 auto;
-    width: 750px;
     text-align: center;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#menu li {
-    display: block;
-    float: left;
+.menu ul {
+    padding: 0;
 }
 
-#menu a {
+.menu li {
+    display: block;
+    padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .menu li {
+        display: inline;
+        padding: 0;
+    }
+}
+
+.menu a {
     border: 1px solid transparent;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     color: #2277BB;
-    display: block;
+    display: inline;
     font-family: myriad-pro-condensed-1, myriad-pro-condensed-2, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
     font-size: 24px;
     margin-left: 15px;
@@ -1108,7 +1105,7 @@ h3 {
     text-decoration: none;
 }
 
-#menu a:hover, #menu li.menu-active a {
+.menu a:hover, .menu li.menu-active a {
     background: #D1E1E6 url("../img/gradient.png") bottom left repeat-x;
     border-color: #b3b3b3;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -1116,48 +1113,18 @@ h3 {
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
-#menu li.menu-highlight a {
+.menu li.menu-highlight a {
     background: #DDCD6F url("../img/gradient.png") bottom left repeat-x;
     border: 1px solid #99821F;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
-#menu li.menu-highlight a:hover {
+.menu li.menu-highlight a:hover {
     background-color: #F2DE7C;
 }
 
-#content_index {
-    text-align: center;
-    padding-top: 35px;
-}
 
-.project {
-    border-bottom: 1px solid black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project_desc {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.project_demo {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font: 24px Arial,Sans-Serif;
-}
-.project_dl {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    font: 24px Arial,Sans-Serif;
-}
 
 .project_dl img {
     border: 1px solid #2277BB;
