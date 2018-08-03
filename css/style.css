@@ -1018,12 +1018,14 @@ hr {
 
 a {
     text-decoration: none;
-    color: #2277BB;
+    color: #222;
+    transition: color 0.5s ease;
+    border-bottom: 1px dotted #919191;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #2277BB;
+    text-decoration: none;
+    color: #0081b6;
 }
 
 a img {
@@ -1048,10 +1050,11 @@ body {
 
 h1 {
     font-family: GraublauWeb;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: normal;
-    margin-top: 30px;
+    margin-top: 130px;
     margin-bottom: 0px;
+    line-height: 40px;
 }
 
 h2 {
@@ -1137,17 +1140,16 @@ h3 {
     -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-#footer {
-    border-top: 2px solid #2277BB;
-    color: #85998F;
-    font-size: 14px;
-    text-shadow: 1px 1px 1px #FFFFFF;
-    margin-top: 30px;
+.footer {
     padding: 15px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #000000;
+}
+
+.footer .footer-icons a {
+    margin: 0 10px;
+    font-size: 26px;
 }
 
 hr {
@@ -1189,7 +1191,7 @@ hr {
 }
 
 .cv-category-title {
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
     font-weight: bold;
 }
@@ -1204,7 +1206,9 @@ hr {
         padding-top: 0px;
         border-left: 1px solid #999999;
     }
-
+    .cv-category-title {
+        font-size: 18px;
+    }
 }
 
 .cv-category-subtitle {
