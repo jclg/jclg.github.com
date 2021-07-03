@@ -1211,11 +1211,39 @@ hr {
     }
 }
 
+.cv-category-content p {
+    margin: 5px 0px 30px 0px;
+}
+
 .cv-category-subtitle {
     font-size: 20px;
     margin: 0 0 6px;
     position: relative;
     font-weight: bold;
+}
+
+.cv-category-info {
+    color: #656565;
+}
+
+.cv-category-icon::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    margin-right: 4px;
+}
+
+.cv-category-date {
+    margin-right: 10px;
+}
+
+.cv-category-date::before {
+    content: "\f073";
+}
+
+.cv-category-location::before {
+    content: "\f041";
 }
 
 .cv-section {
